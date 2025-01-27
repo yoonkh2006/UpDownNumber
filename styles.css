@@ -1,0 +1,23 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  text-align: center;
+}
+
+#guess {
+  margin: 10px 0;
+  padding: 5px;
+  font-size: 16px;
+}
+
+#feedback, #attempts {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+button {
+  padding: 5px 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
