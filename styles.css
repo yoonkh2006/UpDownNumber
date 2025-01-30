@@ -1,23 +1,113 @@
+@font-face {
+  font-family: 'Gyeonggi_Batang_Regular';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2410-3@1.0/Batang_Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* input 옆에 화살표 지우는거 */
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input:focus {
+  /* input 선택했을 때 */
+  outline: 0.1vmax solid #bbbbbb;
+  caret-color: transparent;
+}
+
+input::placeholder {
+  color: #BDBDBD;
+}
+
+
 body {
-  font-family: Arial, sans-serif;
-  margin: 20px;
+  font-family: 'Gyeonggi_Batang_Regular';
   text-align: center;
+  background-color: #a9b5bd;
+  color: #2e2e2e;
+}
+
+#container {
+  background-color: #f0f0f0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 30vmax;
+  width: 30vmax;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 1vmax;
+}
+
+#title {
+  font-size: 3vmax;
+  margin-bottom: 1vmax;
+  user-select: none;
+}
+
+#subtitle {
+  font-size: 1vmax;
+  user-select: none;
 }
 
 #guess {
-  margin: 10px 0;
-  padding: 5px;
-  font-size: 16px;
+  font-family: 'Gyeonggi_Batang_Regular';
+  padding: 0.3vmax;
+  font-size: 1vmax;
+  text-align: center;
+  border: none;
+  margin-bottom: 2vmax;
+  border-radius: 0.3vmax;
+  height: 2vmax;
+  width: 10vmax;
 }
 
-#feedback, #attempts {
-  margin-top: 10px;
-  font-size: 18px;
-  font-weight: bold;
+#botbot {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 10vmax;
 }
 
-button {
-  padding: 5px 15px;
-  font-size: 16px;
+#feedback {
+  user-select: none;
+  font-size: 3vmax;
+  height: 3vmax;
+}
+
+#finish {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+
+#attempts {
+  user-select: none;
+  font-size: 2vmax;
+}
+
+#retry {
+  font-family: 'Gyeonggi_Batang_Regular';
+  user-select: none;
+  height: 2vmax;
+  width: 4vmax;
+  border: none;
+  background-color: white;
+  color: #BDBDBD;
+  font-size: 1vmax;
+  border-radius: 0.2vmax;
+  padding: 0.3vmax;
+  margin-left: 1vmax;
   cursor: pointer;
+}
+
+#record {
+  margin-top: 1vmax;
+  font-size: 1vmax;
 }
